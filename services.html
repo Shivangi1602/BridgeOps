@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRIDGEOPS- Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<body>
+    
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg  bg-light" id="navbar" style="position: sticky; top: 0;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./image/logo.png" alt="" width="180px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
+        </button>
+  
+        <h3 class="bridgelogo">BRIDGEOPS</h3>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="welcome.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="school.html">Schools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+  
+            <div class="other-links">
+              <i class="fa-solid fa-sun fa-xl bright"></i>
+              <i class="fa-solid fa-moon fa-xl dark" style="color: #000000; margin-right:20px;"></i>  
+              <button id="btn-login"><a href="login.html">Login</a></button>
+              <button id="btn-signup"><a href="signup.html">Sign up</a></button>
+        
+              <!-- <i class="fa-solid fa-user"></i> -->
+            </div>
+  
+          <!-- <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" id="search-btn">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+      <!-- navbar end -->
+
+      <!-- services start -->
+        <!-- <h1 style="text-align: center; font-weight: bolder;"><span style="color: #077966;">Services</span> we provide</h1> -->
+        <div class="row  sv">
+          <div class="col-md-2 servo">
+            <div class="sb1 sbut sbutclick">Request Books</div>
+            <div class="sb2 sbut sbutclick">Donate Books</div>
+            </div>
+          <div class="col-md-10 servo2">
+            <div id="req">
+              <form action="">
+                <table>
+                  <tr>
+                    <td><label for="">School Name</label></td>
+                    <td><input type="text" placeholder="enter school name" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="">School Address</label></td>
+                    <td><input type="text" placeholder="enter school address" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="">Contact number</label></td>
+                    <td><input type="number" placeholder="enter school contact number" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="">Email ID</label></td>
+                    <td><input type="email" placeholder="enter school email address" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="">Book Name</label></td>
+                    <td><input type="text" placeholder="enter required book name" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="">Book ISBN number</label></td>
+                    <td><input type="number" placeholder="enter required book ISBN number" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="">Book Grade</label></td>
+                    <td><input type="text" placeholder="for which class book is required" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="">Book Subject</label></td>
+                    <td><input type="text" placeholder="subject of required book" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="">Number of Book required</label></td>
+                    <td><input type="number" placeholder="enter required quantity" required></td>
+                  </tr>
+                </table>
+                <button class="sbmt">Submit requirements</button>
+                <!-- <input type="submit" name="" id="sbmt"> -->
+              </form>
+            </div>
+            <div id="don">
+              <form action="">
+                <table>
+                  <tr>
+                    <td><label for="">Donor Name</label></td>
+                    <td><input type="text" placeholder="enter donor name" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="">Donor Address</label></td>
+                    <td><input type="text" placeholder="enter donor address" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="">Contact number</label></td>
+                    <td><input type="number" placeholder="enter donor contact number"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="">Email ID</label></td>
+                    <td><input type="email" placeholder="enter email address" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="">School</label></td>
+                    <td><select name="" id="" >
+                      <option value="" disabled selected >select school to donate</option>
+                      <option value="ABC Vidyamandir">ABC Vidyamandir</option>
+                      <option value="DEF Vidyapeeth">DEF Vidyapeeth</option>
+                      <option value="GHI School">GHI School</option>
+                      <option value="JKL School">JKL School</option>
+                      <option value="MNO School">MNO School</option>
+                    </select></td>
+                  </tr>
+                  <tr>
+                    <td><label for="">Book Name</label></td>
+                    <td><input type="text" placeholder="enter book name" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="">Book ISBN number</label></td>
+                    <td><input type="number" placeholder="enter book ISBN number" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="">Book Grade</label></td>
+                    <td><input type="text" placeholder="for which class book is donated" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="">Book Subject</label></td>
+                    <td><input type="text" placeholder="subject of book" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="">Number of Book to donate</label></td>
+                    <td><input type="number" placeholder="enter donated quantity" required></td>
+                  </tr>
+                </table>
+                <button class="sbmt">Submit Donation information</button>
+                <!-- <input type="submit" name="" id="sbmt"> -->
+              </form>
+            </div>
+          </div>
+        </div>
+      <!-- services end -->
+
+    <!-- footer start -->
+    <section class="footer0">
+      <section class="ssss">
+          <div class="ftgr">
+                <h1 style="color: #077966; text-shadow: 2px 1px white;">BRIDGEOPS</h1>
+          </div>
+          <div class="ftgr">
+              <ul type="none">
+                  <a href="about.html" target="_blank">
+                      <h6 style="color: white;">ABOUT US</h6>
+                  </a>
+                  <a href="about.html" target="_blank" style="color: rgb(148, 148, 148);">
+                      <li>Vision</li>
+                  </a>
+                  <a href="about.html" target="_blank" style="color: rgb(148, 148, 148);">
+                      <li>Mission</li>
+                  </a>
+                  <a href="services.html" target="_blank" style="color: rgb(148, 148, 148);">
+                      <li>Services</li>
+                  </a>
+              </ul>
+          </div>
+          <div class="ftgr">
+              <ul type="none">
+                  <a href="services.html" target="_blank">
+                      <h6 style="color: white;">SERVICES</h6>
+                  </a>
+                  <a href="services.html" target="_blank" style="color: rgb(148, 148, 148);">
+                      <li>Donate Books</li>
+                  </a>
+                  <a href="services.html" target="_blank" style="color: rgb(148, 148, 148);">
+                    <li>Request Books</li>
+                </a>
+                <a href="school.html" target="_blank" style="color: rgb(148, 148, 148);">
+                      <li>Schools Info</li>
+                  </a>
+              </ul>
+          </div>
+          <div class="ftgr">
+              <ul type="none">
+                  <a href="contact.html" target="_blank">
+                      <h6 style="color: white; margin-left: 0.8vw;">CONTACT US</h6>
+                  </a>
+                  <a href="" target="_blank" style="color: rgb(148, 148, 148);">
+                      <li><img src="images/phn_icon-removebg-preview.png" alt="" height="27px" width="40px"><span>1234567890</span>
+                             </li>
+                  </a>
+                  <a href="mailto:abc@example.com"
+                      target="_blank" style="color: rgb(148, 148, 148);">
+                      <li><img src="images/emailicon-removebg-preview.png" alt="" height="40px"
+                              width="42px"><span>abc@example.com</span></li>
+                  </a>
+                  <a href="https://maps.app.goo.gl/WphxJ5uDeRzjqGG66"
+                      target="_blank" style="color: rgb(148, 148, 148);">
+                      <li><img src="images/locate-removebg-preview.png" alt="" style="filter: invert(100%);"
+                              height="38px" width="39px"><span>Ghaziabad</span></li>
+                  </a>
+              </ul>
+          </div>
+      </section>
+      <hr>
+      <div style="text-align: center; font-weight: 500;">Designed and developed by <span style="color: rgb(118, 207, 198);">ANSHIKA, ASHOK, and SHIVANGI</span></div>
+  </section>
+    <!-- footer end -->
+  
+    <script>
+      $(document).ready(function () {
+          $(".sb1").click(function () {
+            $(".sb1").addClass("sbutclick")
+            $(".sb1").removeClass("sbut")
+            $(".sb2").removeClass("sbutclick")
+            $(".sb2").addClass("sbut")
+            $("#don").hide()
+            $("#req").show()
+          })
+          $(".sb2").click(function () {
+            $(".sb2").addClass("sbutclick")
+            $(".sb2").removeClass("sbut")
+            $(".sb1").removeClass("sbutclick")
+            $(".sb1").addClass("sbut")
+            $("#req").hide()
+            $("#don").show()
+      })
+    })
+    </script>
+  
+  <!-- <script>
+    $(document).ready(function(){
+    $(".dark").click(function(){
+        $("body").css("background-color","black")
+        $("body").css("color","white")
+        $(".dark").hide()
+        $(".bright").show()
+    })
+    $(".bright").click(function(){
+        $("body").css("background-color","white")
+        $("body").css("color","black")
+        $(".bright").hide()
+        $(".dark").show()
+    })
+    })
+  </script> -->
+
+</body>
+</html>

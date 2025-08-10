@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>BRIDGEOPS-signup</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        h1 { text-align: center; }
+        .dropdown-container { 
+            background-color: white; 
+            padding: 20px; 
+            border-radius: 5px; 
+        }
+        .dropdown select { 
+            width: 200px; 
+            padding: 10px; 
+            border-radius: 4px; 
+            font-size: 16px;
+        }
+        .dropdown select:focus { 
+            border-color: #66c4e9;  
+            box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+        }
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg  bg-light" id="navbar" style="position: sticky; top: 0;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./image/logo.png" alt="" width="180px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
+      </button>
+
+      <h3 class="bridgelogo">BRIDGEOPS</h3>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="welcome.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="school.html">Schools</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+          <div class="other-links">
+            <i class="fa-solid fa-sun fa-xl bright"></i>
+            <i class="fa-solid fa-moon fa-xl dark" style="color: #000000; margin-right:20px;"></i>
+            <a href="login.html"><button id="btn-login">Login</button></a>
+            <a href="signup.html"><button id="btn-signup">Sign up</button></a>
+      
+            <!-- <i class="fa-solid fa-user"></i> -->
+          </div>
+
+        <!-- <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit" id="search-btn">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+  <!-- navbar -->
+
+    <!-- signup -->
+    <div class="container login" style="display: block; margin-left: auto;margin-right: auto;">
+        <div class="row">
+            <div class="col-md-4" id="side1">
+                <h3>Welcome Back!!</h3>
+                <p>On Our Book Donation Website</p>
+                <div id="btn"><a href="login.html">Login</a></div>
+            </div>
+            <div class="col-md-8" id="side2">
+                <h3>Create Account</h3>
+                <div class="inp">
+                    <form id="signupForm">
+                        <input type="text" id="name" placeholder="Name" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="password" id="password" placeholder="Password" required>
+                        <div class="dropdown-container"> 
+                            <div class="dropdown">
+                                <select id="role" required>
+                                    <option value="" disabled selected>Select an option</option> 
+                                    <option value="donor">Donor</option>
+                                    <option value="school">School</option>
+                                </select> 
+                            </div> 
+                        </div>
+                        <button type="submit">SIGN UP</button>
+                        <p class="error-message" id="signupError"></p>
+                    </form>
+                </div>
+                <p>Our Social Network.</p>
+                <div class="icons">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- signup -->
+
+        <!-- footer start -->
+        <section class="footer0">
+            <section class="ssss">
+                <div class="ftgr">
+                      <h1 style="color: #077966; text-shadow: 2px 1px white;">BRIDGEOPS</h1>
+                </div>
+                <div class="ftgr">
+                    <ul type="none">
+                        <a href="about.html" target="_blank">
+                            <h6 style="color: white;">ABOUT US</h6>
+                        </a>
+                        <a href="about.html" target="_blank" style="color: rgb(148, 148, 148);">
+                            <li>Vision</li>
+                        </a>
+                        <a href="about.html" target="_blank" style="color: rgb(148, 148, 148);">
+                            <li>Mission</li>
+                        </a>
+                        <a href="services.html" target="_blank" style="color: rgb(148, 148, 148);">
+                            <li>Services</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="ftgr">
+                    <ul type="none">
+                        <a href="services.html" target="_blank">
+                            <h6 style="color: white;">SERVICES</h6>
+                        </a>
+                        <a href="services.html" target="_blank" style="color: rgb(148, 148, 148);">
+                            <li>Donate Books</li>
+                        </a>
+                        <a href="services.html" target="_blank" style="color: rgb(148, 148, 148);">
+                          <li>Request Books</li>
+                      </a>
+                      <a href="school.html" target="_blank" style="color: rgb(148, 148, 148);">
+                            <li>Schools Info</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="ftgr">
+                    <ul type="none">
+                        <a href="contact.html" target="_blank">
+                            <h6 style="color: white; margin-left: 0.8vw;">CONTACT US</h6>
+                        </a>
+                        <a href="" target="_blank" style="color: rgb(148, 148, 148);">
+                            <li><img src="images/phn_icon-removebg-preview.png" alt="" height="27px" width="40px"><span>1234567890</span>
+                                   </li>
+                        </a>
+                        <a href="mailto:abc@example.com"
+                            target="_blank" style="color: rgb(148, 148, 148);">
+                            <li><img src="images/emailicon-removebg-preview.png" alt="" height="40px"
+                                    width="42px"><span>abc@example.com</span></li>
+                        </a>
+                        <a href="https://maps.app.goo.gl/WphxJ5uDeRzjqGG66"
+                            target="_blank" style="color: rgb(148, 148, 148);">
+                            <li><img src="images/locate-removebg-preview.png" alt="" style="filter: invert(100%);"
+                                    height="38px" width="39px"><span>Ghaziabad</span></li>
+                        </a>
+                    </ul>
+                </div>
+            </section>
+            <hr>
+            <div style="text-align: center; font-weight: 500;">Designed and developed by <span style="color: rgb(118, 207, 198);">ANSHIKA, ASHOK, and SHIVANGI</span></div>
+        </section>
+        <!-- footer end -->
+      
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const role = document.getElementById('role').value;
+            const signupError = document.getElementById('signupError');
+
+            // Reset error message
+            signupError.textContent = "";
+
+            // Validate Name
+            if (name === "") {
+                signupError.textContent = "Please enter your name.";
+                return;
+            }
+
+            // Validate Email
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (!emailPattern.test(email)) {
+                signupError.textContent = "Please enter a valid email address.";
+                return;
+            }
+
+            // Validate Password
+            if (password.length < 8) {
+                signupError.textContent = "Password must be at least 8 characters long.";
+                return;
+            }
+
+            // Validate Role
+            if (!role) {
+                signupError.textContent = "Please select a role.";
+                return;
+            }
+
+            // If all validations pass
+            alert("Sign-up successful!");
+            // Here you can add further processing like submitting the form data to the server
+        });
+    </script>
+
+<!-- <script>
+    $(document).ready(function(){
+    $(".dark").click(function(){
+        $("body").css("background-color","black")
+        $("body").css("color","white")
+        $(".dark").hide()
+        $(".bright").show()
+    })
+    $(".bright").click(function(){
+        $("body").css("background-color","white")
+        $("body").css("color","black")
+        $(".bright").hide()
+        $(".dark").show()
+    })
+    })
+  </script> -->
+
+</body>
+</html>
+
